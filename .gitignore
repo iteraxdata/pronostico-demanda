@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Datos: NUNCA subas datos reales de clientes a un repo público.
+# Solo se versionan este README y el script que genera datos sintéticos.
+data/*.csv
+data/*.xlsx
+data/*.parquet
+!data/.gitkeep
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+.env
+
+# Salidas generadas por el notebook (se reproducen con el README)
+reports/*
+!reports/.gitkeep
