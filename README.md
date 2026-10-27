@@ -58,7 +58,7 @@ jupyter nbconvert --to html notebooks/01_pronostico_demanda.ipynb --output-dir r
 
 ## Licencia
 
-*(por definir antes de hacer público el repositorio; sin licencia, el código queda con todos los derechos reservados)*
+[MIT](LICENSE) © 2026 iterAX Data. La licencia cubre el **código** de este repositorio. Los datos que uses con él siguen siendo de sus dueños: no los publiques sin autorización.
 
 ---
 
