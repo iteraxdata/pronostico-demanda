@@ -4,3 +4,5 @@ statsmodels>=0.14
 plotly>=5.18
 jupyterlab>=4.0
 nbconvert>=7.0
+holidays>=0.50
+scikit-learn>=1.3
