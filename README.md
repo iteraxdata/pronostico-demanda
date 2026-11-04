@@ -30,11 +30,20 @@ python scripts/generate_sample_data.py     # datos sintéticos de ejemplo
 jupyter lab notebooks/01_pronostico_demanda.ipynb
 ```
 
-Para exportar el notebook como página HTML (por ejemplo, para el sitio):
+Para exportar el notebook ejecutado como página HTML con sus gráficos interactivos (por ejemplo, para el sitio), indica el renderizador de Plotly; sin él, la exportación omite los gráficos:
 
 ```bash
-jupyter nbconvert --to html notebooks/01_pronostico_demanda.ipynb --output-dir reports
+# macOS/Linux
+PLOTLY_RENDERER=notebook_connected jupyter nbconvert --to html --execute notebooks/01_pronostico_demanda.ipynb --output-dir reports --output notebook.html
 ```
+
+```powershell
+# Windows (PowerShell)
+$env:PLOTLY_RENDERER = "notebook_connected"
+jupyter nbconvert --to html --execute notebooks/01_pronostico_demanda.ipynb --output-dir reports --output notebook.html
+```
+
+Los gráficos se cargan desde el CDN de Plotly, así que el HTML necesita conexión a internet al abrirse.
 
 ## Estructura
 
